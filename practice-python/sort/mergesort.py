@@ -1,5 +1,6 @@
 
 import random
+from typing import List
 
 
 class MergeSort(object):
@@ -92,17 +93,53 @@ class MergeSortBU(object):
             size *= 2
 
 
+# 2.2.14 merge two sorted list
+def merge_two_sorted(lst1: List, lst2: List) -> List:
+
+    assert lst1 or lst2
+    if not lst1 or not lst2:
+        return lst1[:] if not lst2 else lst2[:]
+
+    n1 = len(lst1)
+    n2 = len(lst2)
+    res = []
+
+    i1, i2 = 0, 0
+
+    for _ in range(n1 + n2):
+
+        if i1 > len(lst1) - 1:
+            res.extend(lst2[i2:])
+            break
+        elif i2 > len(lst2) - 1:
+            res.extend(lst1[i1:])
+            break
+        elif lst1[i1] < lst2[i2]:
+            res.append(lst1[i1])
+            i1 += 1
+        else:
+            res.append(lst2[i2])
+            i2 += 1
+
+    assert len(res) == n1 + n2
+
+    return res
+
+
 def main():
 
-    arr = [random.randrange(1, 10, 1) for _ in range(100)]
+    arr1 = [random.randrange(1, 100, 1) for _ in range(10)]
     mg = MergeSort()
-    mg.sort(arr)
-    print(arr)
+    mg.sort(arr1)
+    print(arr1)
 
-    arr = [random.randrange(1, 10, 1) for _ in range(100)]
+    arr2 = [random.randrange(1, 100, 1) for _ in range(10)]
     mg = MergeSortBU()
-    mg.sort(arr)
-    print(arr)
+    mg.sort(arr2)
+    print(arr2)
+
+    merged_arr = merge_two_sorted(arr1, arr2)
+    print(merged_arr)
 
 
 if __name__ == "__main__":
