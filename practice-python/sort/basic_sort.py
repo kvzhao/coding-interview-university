@@ -28,6 +28,10 @@ def main():
     insertion_sort(arr)
     print(arr)
 
+    s = [c for c in "INTERVIEW"]
+    insertion_sort(s)
+    print(s)
+
 
 if __name__ == "__main__":
     main()
