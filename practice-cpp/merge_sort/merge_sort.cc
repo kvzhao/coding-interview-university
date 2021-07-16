@@ -7,7 +7,6 @@
 void MergeSort::sort(std::vector<int>& arr) {
 
     aux.assign(arr.begin(), arr.end());
-    // sort
     _sort(arr, aux, 0, arr.size() - 1);
 }
 
@@ -19,7 +18,7 @@ void MergeSort::_sort(vector<int>& arr, vector<int>& aux, int lo, int hi) {
 
     int mid = lo + (hi - lo) / 2;
 
-    // eliminate copy
+    // switch arr and aux for eliminating copy
     _sort(aux, arr, lo, mid);
     _sort(aux, arr, mid + 1, hi);
     merge(arr, aux, lo, mid, hi);
@@ -31,13 +30,13 @@ void MergeSort::merge(vector<int>& arr, vector<int>& aux, int lo, int mid, int h
 
     for (int i = lo; i < hi + 1; i++) {
         if (left > mid) {
-            aux[i] = arr[right++];
+            arr[i] = aux[right++];
         } else if (right > hi) {
-            aux[i] = arr[left++];
-        } else if (arr[right] < arr[left]) {
-            aux[i] = arr[right++];
+            arr[i] = aux[left++];
+        } else if (aux[right] < aux[left]) {
+            arr[i] = aux[right++];
         } else {
-            aux[i] = arr[left++];
+            arr[i] = aux[left++];
         }
     }
 }
