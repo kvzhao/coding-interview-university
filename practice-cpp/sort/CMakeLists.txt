@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(merge_sort)
+project(sort_algorithms)
 
 add_definitions(-std=c++17)
 add_definitions(-Werror)
@@ -11,4 +11,4 @@ set(SOURCE_FILES
 	merge_sort.cc
 )
 
-add_executable(merge_sort ${SOURCE_FILES} ${HEADER_FILES})
+add_executable(sort ${SOURCE_FILES} ${HEADER_FILES})

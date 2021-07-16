@@ -8,7 +8,7 @@
 #include <string>
 #include <fstream>
 
-#include "merge_sort.hpp"
+#include "sort_algorithm.hpp"
 #include "helper.hpp"
 
 int main(int argc, char *argv[]) {

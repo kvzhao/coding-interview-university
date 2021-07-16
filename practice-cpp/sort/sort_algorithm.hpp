@@ -18,3 +18,15 @@ void _sort(vector<int>& arr, vector<int>& aux, int low, int high);
 vector<int> aux;
 
 };
+
+
+class QuickSort {
+
+public:
+void sort(vector<int>& arr);
+
+private:
+void _sort();
+void _partition();
+
+};

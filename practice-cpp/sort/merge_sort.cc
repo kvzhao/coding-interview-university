@@ -1,5 +1,5 @@
 
-#include "merge_sort.hpp"
+#include "sort_algorithm.hpp"
 
 #include <iostream>
 #include <vector>
