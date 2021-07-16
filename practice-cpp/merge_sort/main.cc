@@ -24,6 +24,8 @@ int main(int argc, char *argv[]) {
         std::cout << "arr size = " << arr.size() << "\n";
     } else {
         std::cout << "can not open file\n";
+        // TODO: Random integer
+        // min + ( std::rand() % ( max - min + 1 ) )
     }
 
     auto ms = MergeSort();
