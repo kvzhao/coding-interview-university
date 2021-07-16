@@ -1,12 +1,17 @@
+"""
+    Algorithm 4th chapter 2
+"""
+
 
 import random
 from typing import List
+from helper import is_sorted
 
 
 class MergeSort(object):
 
     def __init__(self):
-        self.CUTOFF = 10
+        self.CUTOFF = 0
 
     def merge(self, aux, lst, lo, mid, hi):
         """
@@ -50,9 +55,6 @@ class MergeSort(object):
         mid = int((lo + hi) / 2)
         self._sort(lst, aux, lo, mid)
         self._sort(lst, aux, mid + 1, hi)
-        if aux[mid] < aux[mid + 1]:
-            # lst[lo:hi - lo + 1] = aux[lo:hi - lo + 1]
-            return
         self.merge(aux, lst, lo, mid, hi)
 
 
@@ -126,20 +128,65 @@ def merge_two_sorted(lst1: List, lst2: List) -> List:
     return res
 
 
+# 2.2.15 bottom-up merge sort using queue
+def bu_merge_sort_q(lst):
+    # creat 2d list
+    for i in range(len(lst)):
+        lst[i] = [lst[i]]
+
+    while len(lst) != 1:
+        lst1 = lst.pop(0)
+        lst2 = lst.pop(0)
+        # due to bottom up, both lsts are sorted
+        lst.append(merge_two_sorted(lst1, lst2))
+
+    lst.extend(lst.pop(0))
+    return lst
+
+
+# 2.2.19 Inversions.
+class ReverseCount(object):
+    def reverse_count(self, lst):
+        pass
+
+
 def main():
 
-    arr1 = [random.randrange(1, 100, 1) for _ in range(10)]
+    list_length = 100
+    list_val_range = 10000
+
+    arr1 = [random.randrange(1, list_val_range, 1) for _ in range(list_length)]
     mg = MergeSort()
     mg.sort(arr1)
-    print(arr1)
 
-    arr2 = [random.randrange(1, 100, 1) for _ in range(10)]
+    if is_sorted(arr1):
+        print("arr1 (MergeSort) is sorted")
+    else:
+        print("MergeSort", arr1)
+
+    arr2 = [random.randrange(1, list_val_range, 1) for _ in range(list_length)]
     mg = MergeSortBU()
     mg.sort(arr2)
-    print(arr2)
+
+    if is_sorted(arr2):
+        print("arr2 (MergeSortBU) is sorted")
+    else:
+        print("MergeSortBU", arr2)
 
     merged_arr = merge_two_sorted(arr1, arr2)
-    print(merged_arr)
+
+    if is_sorted(merged_arr):
+        print("merge_two_sorted sorted")
+    else:
+        print("merge_two_sorted", merged_arr)
+
+    arr3 = [random.randrange(1, list_val_range, 1) for _ in range(list_length)]
+    bu_merge_sort_q(arr3)
+
+    if is_sorted(arr3):
+        print("bu_merge_sort_q sorted")
+    else:
+        print("bu_merge_sort_q", arr3)
 
 
 if __name__ == "__main__":
