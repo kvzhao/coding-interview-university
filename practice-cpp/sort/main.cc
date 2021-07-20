@@ -33,7 +33,24 @@ int main(int argc, char *argv[]) {
 
     // print
     if (is_sorted(arr)) {
-        std::cout << "Sorted\n";
+        std::cout << "Merge Sort Passed\n";
+    } else {
+        for (auto v : arr) {
+            std::cout << v << " ";
+        }
+        std::cout << "\n";
+    }
+
+    auto rng = std::default_random_engine {};
+    std::shuffle(std::begin(arr), std::end(arr), rng);
+
+    auto qs = QuickSort();
+
+    qs.sort(arr);
+
+    // print
+    if (is_sorted(arr)) {
+        std::cout << "Quick Sort Passed\n";
     } else {
         for (auto v : arr) {
             std::cout << v << " ";
