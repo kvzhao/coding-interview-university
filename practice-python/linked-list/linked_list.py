@@ -41,6 +41,21 @@ class LinkedList(object):
             tmp = tmp.next_node
         return False
 
+    def delete_first(self) -> Union[None, Any]:
+        tmp = self._first
+        if not tmp:
+            return None
+        if not tmp.next_node:
+            deleted_val = tmp.val
+            self._first = None
+            self._size -= 1
+            return deleted_val
+
+        deleted_val = tmp.val
+        self._first = tmp.next_node
+        self._size -= 1
+        return deleted_val
+
     def delete_last(self) -> Union[None, Any]:
         tmp = self._first
         if not tmp:

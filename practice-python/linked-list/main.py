@@ -12,7 +12,11 @@ def main():
     ll.print_list()
 
     last_one = ll.delete_last()
-    print("last val", last_one)
+    print("delete last val", last_one)
+    ll.print_list()
+
+    first_one = ll.delete_first()
+    print("delete first val", first_one)
     ll.print_list()
 
     ll.delete(3)
@@ -21,6 +25,10 @@ def main():
 
     print("remove after 60")
     ll.remove_after(60)
+    ll.print_list()
+
+    print("remove after 40")
+    ll.remove_after(40)
     ll.print_list()
 
     print("insert after 40")
