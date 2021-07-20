@@ -3,6 +3,8 @@ from node import Node
 
 from typing import Any, Union
 
+# TODO: Linked list merge sort
+
 
 class LinkedList(object):
 
