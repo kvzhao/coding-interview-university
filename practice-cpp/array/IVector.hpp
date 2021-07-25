@@ -10,6 +10,15 @@ static const int kMinCapacity = 16;
 static const int kGrowthFactor = 2;
 }
 
+template <typename T>
+class Vector {
+
+private:
+
+int size_  = 0;
+std::unique_ptr<T *> data_; 
+};
+
 // Implement a vector (mutable array with automatic resizing)
 // Integer Vector
 class IVector {
