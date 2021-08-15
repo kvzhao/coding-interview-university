@@ -1,6 +1,4 @@
 
-from typing import List, Union
-
-
+# three templates
 def binary_search(lst):
     pass
