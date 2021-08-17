@@ -338,8 +338,8 @@ This is a shorter list than what I used. This is abbreviated to save you time.
 
 Choose one:
 
-- [ ] [Elements of Programming Interviews (C++ version)](https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836)
-- [x] [Elements of Programming Interviews in Python](https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949/)
+- [x] [Elements of Programming Interviews (C++ version)](https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836)
+- [ ] [Elements of Programming Interviews in Python](https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949/)
 - [ ] Elements of Programming Interviews (Java version)
     - [book](https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517435803/)
     - [Companion Project - Method Stub and Test Cases for Every Problem in the Book](https://github.com/gardncl/elements-of-programming-interviews)
@@ -357,7 +357,7 @@ If you read through one of these, you should have all the data structures and al
 
 ### C++
 
-- [] Choose this C++? (for wider career choices BUT NOT NOW)
+- [x] Choose this C++? (for wider career choices BUT NOT NOW)
 I haven't read these two, but they are highly rated and written by Sedgewick. He's awesome.
 
 - [ ] [Algorithms in C++, Parts 1-4: Fundamentals, Data Structure, Sorting, Searching](https://www.amazon.com/Algorithms-Parts-1-4-Fundamentals-Structure/dp/0201350882/)
@@ -384,14 +384,14 @@ OR:
 
 ### Python
 
-- [x] Choose this Python3? (for deeper understand algorithm)
+- [ ] Choose this Python3? (for deeper understand algorithm)
 
-- [x] [Data Structures and Algorithms in Python](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275/)
+- [ ] [Data Structures and Algorithms in Python](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275/)
     - by Goodrich, Tamassia, Goldwasser
     - I loved this book. It covered everything and more
     - Pythonic code
     - my glowing book report: https://startupnextdoor.com/book-report-data-structures-and-algorithms-in-python/
-- [x] [Open Data Structures in Python](https://opendatastructures.org/ods-python.pdf)
+- [ ] [Open Data Structures in Python](https://opendatastructures.org/ods-python.pdf)
 
 ## Before you Get Started
 
