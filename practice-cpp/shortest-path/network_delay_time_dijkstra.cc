@@ -31,7 +31,7 @@ public:
                      vector<pair<int, int>>,
                      greater<pair<int, int>>> pq;
       // (dist, node)
-      pq.emplace(make_pair(0, k));
+      pq.push(make_pair(0, k));
 
       while (!pq.empty()) {
         auto p = pq.top();
@@ -41,7 +41,7 @@ public:
         for (auto [v ,w] : graph[u]) {
           if (dist[v] > dist[u] + w) {
             dist[v] = dist[u] + w;
-            pq.emplace(make_pair(dist[v], v));
+            pq.push(make_pair(dist[v], v));
           }
         }
       }
