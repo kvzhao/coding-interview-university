@@ -14,29 +14,29 @@ using std::greater;
 using std::cout;
 using std::max_element;
 
+typedef pair<int, int> ipair;
+
 class Solution {
 public:
     int networkDelayTime(vector<vector<int>>& times, int n, int k) {
       const int inf = 1e9;
-      vector<vector<pair<int, int>>> graph(n + 1);
+      // adjacency list
+      vector<vector<ipair>> graph(n + 1);
       vector<int> dist(n + 1, inf);
       // build graph
       for(const auto& t : times) {
-        // from, to, cost
+        // from (u), to (v), cost (w)
         graph[t[0]].emplace_back(make_pair(t[1], t[2]));
       }
       dist[k] = 0;
       
-      priority_queue<pair<int, int>,
-                     vector<pair<int, int>>,
-                     greater<pair<int, int>>> pq;
-      // (dist, node)
+      // cost, from (u)
+      priority_queue<ipair, vector<ipair>, greater<ipair>> pq;
       pq.push(make_pair(0, k));
 
       while (!pq.empty()) {
-        auto p = pq.top();
+        int u = pq.top().second;
         pq.pop();
-        int u = p.second;
 
         for (auto [v ,w] : graph[u]) {
           if (dist[v] > dist[u] + w) {
@@ -47,9 +47,8 @@ public:
       }
 
       int ans = *max_element(dist.begin() + 1, dist.end());
-
       return ans == inf ? -1 : ans;
-        
+
       return -1;
     }
 };
