@@ -32,7 +32,7 @@ public:
       
       // cost, from (u)
       priority_queue<ipair, vector<ipair>, greater<ipair>> pq;
-      pq.push(make_pair(0, k));
+      pq.emplace(make_pair(0, k));
 
       while (!pq.empty()) {
         int u = pq.top().second;
@@ -41,15 +41,13 @@ public:
         for (auto [v ,w] : graph[u]) {
           if (dist[v] > dist[u] + w) {
             dist[v] = dist[u] + w;
-            pq.push(make_pair(dist[v], v));
+            pq.emplace(make_pair(dist[v], v));
           }
         }
       }
 
       int ans = *max_element(dist.begin() + 1, dist.end());
       return ans == inf ? -1 : ans;
-
-      return -1;
     }
 };
 
