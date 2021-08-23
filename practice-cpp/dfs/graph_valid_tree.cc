@@ -30,7 +30,10 @@ class Solution {
     visited[current] = true;
 
     for (auto neighbor : graph[current]) {
-      if (neighbor != parent && hasCycle(graph, neighbor, current, visited)) {
+
+      if (neighbor == parent) continue;
+
+      if (hasCycle(graph, neighbor, current, visited)) {
         return true;
       }
     }
