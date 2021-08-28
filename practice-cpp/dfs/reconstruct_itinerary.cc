@@ -23,7 +23,9 @@ class Solution {
 public:
     // looks like topogical sort?
     vector<string> findItinerary(vector<vector<string>>& tickets) {
-      // ticket => edge, graph => adj-list
+      // Euler path
+    // https://leetcode.com/problems/reconstruct-itinerary/discuss/1219170/C%2B%2B-Euler-path-dfs-(comments)
+    // http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&file=f0b00e42978035a90f533cc2421cff2c19e41bb55
       vector<string> tours;
       return tours;
     }

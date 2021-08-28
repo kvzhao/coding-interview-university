@@ -52,7 +52,6 @@ public:
         }
 
         // Tree: 1. No cycle, 2. All nodes approachable
-
         if (hasCycle(graph, 0, -1, visited)) {
           return false;
         }
