@@ -3,11 +3,13 @@
 #include <queue>
 #include <utility>
 #include <iostream>
+#include <algorithm>
 
 using std::vector;
 using std::pair;
 using std::make_pair;
 using std::cout;
+using std::sort;
 
 class DisjointSet {
 
