@@ -508,6 +508,26 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
     - [ ] [The Central Processing Unit (CPU) (video)](https://youtu.be/FZGugFqdr60)
     - [ ] [Instructions and Programs (video)](https://youtu.be/zltgXvg6r3k)
 
+- [ ] **Learn C++**
+    - [ ] Stanford lectures - CS106L 2020 Fall
+        - [ ] L1: Intro
+        - [ ] L2: Struct
+        - [ ] L3: Init & Ref
+        - [ ] L4: Streams
+        - [ ] L5: Containers
+        - [ ] L6: Iterators
+        - [ ] L7: Templates
+        - [ ] L8
+        - [ ] L9
+        - [ ] L10
+        - [ ] L11
+        - [ ] L12
+        - [ ] L13
+        - [ ] L14
+        - [ ] L15
+        - [ ] L16
+        - [ ] L17
+    - [ ] Effective Modern C++
 ## Algorithmic complexity / Big-O / Asymptotic analysis
 
 - Nothing to implement
