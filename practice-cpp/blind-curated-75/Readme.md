@@ -3,7 +3,7 @@
 
 Array
 
-- Two Sum -
+<s> - Two Sum - </s>
 
 [https://leetcode.com/problems/two-sum/](https://leetcode.com/problems/two-sum/)
 
@@ -164,7 +164,7 @@ Interval
 
 [https://leetcode.com/problems/non-overlapping-intervals/](https://leetcode.com/problems/non-overlapping-intervals/)
 
-- Meeting Rooms (Leetcode Premium) -
+<s> - Meeting Rooms (Leetcode Premium) - </s>
 
 [https://leetcode.com/problems/meeting-rooms/](https://leetcode.com/problems/meeting-rooms/)
 
