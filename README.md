@@ -492,6 +492,14 @@ You don't need to memorize the guts of every algorithm.
 
 Write code on a whiteboard or paper, not a computer. Test with some sample inputs. Then test it out on a computer.
 
+
+## My Note about Daily Plan
+
+Resume the coding practice for next stage interview. It would be resumed from [blind-curated-75](./practice-cpp/blind-curated-75/Readme.md) list.
+ - Done: 0 / 75
+
+
+
 ## Prerequisite Knowledge
 
 - [ ] **Learn C**

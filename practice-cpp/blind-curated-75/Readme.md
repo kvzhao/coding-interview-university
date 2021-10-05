@@ -128,7 +128,7 @@ Graph
 
 [https://leetcode.com/problems/pacific-atlantic-water-flow/](https://leetcode.com/problems/pacific-atlantic-water-flow/)
 
-- Number of Islands -
+<s>- Number of Islands -</s>
 
 [https://leetcode.com/problems/number-of-islands/](https://leetcode.com/problems/number-of-islands/)
 

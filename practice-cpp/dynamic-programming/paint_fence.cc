@@ -27,6 +27,7 @@ public:
       }
 
       for (int i = 3; i <= n; ++i) {
+        // ways(i) = ways(i-1) * k-1 + ways(i-2) * k-1 * 1
         dp[i] = (dp[i - 2] + dp[i-1]) * (k - 1);
       }
 
