@@ -17,7 +17,7 @@ public:
 
 int main() {
   /*
-  Given an array of meeting time intervals where intervals[i] = [starti, endi], determine if a person could attend all meetings.
+  Given an array of meeting time intervals intervals where intervals[i] = [starti, endi], return the minimum number of conference rooms required.
   */
   vector<vector<int>> intervals;
   int ans, ret;
@@ -27,13 +27,13 @@ int main() {
   ans = 2;
 
   ret = sol.minMeetingRooms(intervals);
-  if (ans != ret) cout << "failed\n";
+  if (ans != ret) cout << "failed" << ", " << ret << "\n";
   else cout << "passed\n";
 
   intervals = {{7,10},{2,4}};
   ans = 1;
   ret = sol.minMeetingRooms(intervals);
-  if (ans != ret) cout << "failed\n";
+  if (ans != ret) cout << "failed" << ", " << ret << "\n";
   else cout << "passed\n";
 
   return 0;
