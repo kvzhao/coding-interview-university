@@ -7,7 +7,7 @@ Array
 
 [https://leetcode.com/problems/two-sum/](https://leetcode.com/problems/two-sum/)
 
-- Best Time to Buy and Sell Stock -
+<s> - Best Time to Buy and Sell Stock - </s>
 
 [https://leetcode.com/problems/best-time-to-buy-and-sell-stock/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
@@ -71,7 +71,7 @@ Binary
 
 Dynamic Programming
 
-- Climbing Stairs -
+<s> - Climbing Stairs - </s>
 
 [https://leetcode.com/problems/climbing-stairs/](https://leetcode.com/problems/climbing-stairs/)
 
@@ -268,7 +268,7 @@ String
 
 Tree
 
-- Maximum Depth of Binary Tree -
+<s> - Maximum Depth of Binary Tree - </s>
 
 [https://leetcode.com/problems/maximum-depth-of-binary-tree/](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
