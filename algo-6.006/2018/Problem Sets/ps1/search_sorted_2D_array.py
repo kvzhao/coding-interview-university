@@ -1,3 +1,4 @@
+# O(nlogn) algorithm
 def search_sorted_2D_array_v1(A, v):
     '''
     Return tuple (x, y) such that A[y][x] == v, or None.
@@ -22,7 +23,7 @@ def search_sorted_2D_array_v1(A, v):
                 right = x - 1
     return None
 
-
+# O(n + m) algorithm
 def search_sorted_2D_array(A, v):
 
     def search_subarray(A, v, x0, y0, x1, y1):
@@ -30,11 +31,12 @@ def search_sorted_2D_array(A, v):
         if (x1 < x0) or (y1 < y0):
             return None
 
-        val = A[y1][x0]
+        # bottom-left of region R
+        s = A[y1][x0]
 
-        if val > v:
+        if s > v:
             return search_subarray(A, v, x0, y0, x1, y1 - 1)
-        if val < v:
+        if s < v:
             return search_subarray(A, v, x0 + 1, y0, x1, y1)
 
         return (x0, y1)
