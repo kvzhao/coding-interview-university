@@ -385,6 +385,8 @@ OR:
 ### Python
 
 - [ ] Choose this Python3? (for deeper understand algorithm)
+- [ ] Have new thoughts about using python as major language...
+- [ ] Another benefits of using python is 6.006 algorithm lecture
 
 - [ ] [Data Structures and Algorithms in Python](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275/)
     - by Goodrich, Tamassia, Goldwasser
@@ -392,6 +394,11 @@ OR:
     - Pythonic code
     - my glowing book report: https://startupnextdoor.com/book-report-data-structures-and-algorithms-in-python/
 - [ ] [Open Data Structures in Python](https://opendatastructures.org/ods-python.pdf)
+
+
+### Algorithm 6.006
+My new plan about studying on fundamental algorithm courses.
+- [ ] ps1
 
 ## Before you Get Started
 
