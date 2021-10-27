@@ -399,6 +399,7 @@ OR:
 ### Algorithm 6.006
 My new plan about studying on fundamental algorithm courses.
 - [ ] ps1
+- [ ] ps2
 
 ## Before you Get Started
 
