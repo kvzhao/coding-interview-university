@@ -10,17 +10,15 @@ public:
         if (nums.size() == 1)
             return nums[0];
         
-        int max = -1e9;
-        int current = 0;
+        int best = -1e9;
+        int maxSum = 0;
 
-        for (size_t i = 0; i < nums.size(); ++i) {
-            current += nums[i];
-
-            max = std::max(current, max);
-            current = std::max(current, 0);
+        for (auto n : nums) {
+            maxSum = max(maxSum + n, n);
+            best = max(best, maxSum);
         }
         
-        return max;
+        return best;
     }
 };
 

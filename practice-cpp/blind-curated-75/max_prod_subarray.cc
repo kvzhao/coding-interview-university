@@ -9,19 +9,21 @@ public:
     int maxProduct(vector<int>& nums) {
         if (nums.size() == 0) return 0;
 
-        int min_so_far = nums[0];
-        int max_so_far = nums[0];
-        int result = max_so_far;
+        int best = -1e9;
+        int maxProd = 1, minProd = 1;
 
-        for (size_t i = 1; i < nums.size(); ++i) {
-            auto current = nums[i];
-            int temp = max(current, max(max_so_far * current, min_so_far * current));
-            min_so_far = min(current, min(max_so_far * current, min_so_far * current));
-            max_so_far = temp;
-            result = max(max_so_far, result);
+        for (auto n : nums) {
+
+            if (n < 0) {
+                swap(minProd, maxProd);
+            }
+
+            maxProd = max(maxProd * n, n);
+            minProd = min(minProd * n, n);
+            best = max(maxProd, best);
         }
 
-        return result;
+        return best;
     }
 };
 
