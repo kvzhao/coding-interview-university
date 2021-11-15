@@ -20,3 +20,6 @@ build
 __pycache__
 *.pyc
 a.out
+
+epijudge-cpp
+.vscode
