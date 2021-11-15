@@ -11,15 +11,15 @@ Array
 
 [https://leetcode.com/problems/best-time-to-buy-and-sell-stock/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
-- Contains Duplicate -
+<s> - Contains Duplicate - </s>
 
 [https://leetcode.com/problems/contains-duplicate/](https://leetcode.com/problems/contains-duplicate/)
 
-- Product of Array Except Self -
+<s> - Product of Array Except Self - </s>
 
 [https://leetcode.com/problems/product-of-array-except-self/](https://leetcode.com/problems/product-of-array-except-self/)
 
-- Maximum Subarray -
+<s> - Maximum Subarray - </s>
 
 [https://leetcode.com/problems/maximum-subarray/](https://leetcode.com/problems/maximum-subarray/)
 
