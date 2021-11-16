@@ -23,11 +23,11 @@ Array
 
 [https://leetcode.com/problems/maximum-subarray/](https://leetcode.com/problems/maximum-subarray/)
 
-- Maximum Product Subarray -
+<s> - Maximum Product Subarray - </s>
 
 [https://leetcode.com/problems/maximum-product-subarray/](https://leetcode.com/problems/maximum-product-subarray/)
 
-- Find Minimum in Rotated Sorted Array -
+<s> - Find Minimum in Rotated Sorted Array - </s>
 
 [https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
