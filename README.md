@@ -357,7 +357,8 @@ If you read through one of these, you should have all the data structures and al
 
 ### C++
 
-- [x] Choose this C++? (for wider career choices BUT NOT NOW)
+- [x] Choose this C++, sure.
+- [ ] Read CP.pdf
 I haven't read these two, but they are highly rated and written by Sedgewick. He's awesome.
 
 - [ ] [Algorithms in C++, Parts 1-4: Fundamentals, Data Structure, Sorting, Searching](https://www.amazon.com/Algorithms-Parts-1-4-Fundamentals-Structure/dp/0201350882/)
@@ -384,9 +385,9 @@ OR:
 
 ### Python
 
-- [ ] Choose this Python3? (for deeper understand algorithm)
-- [ ] Have new thoughts about using python as major language...
-- [ ] Another benefits of using python is 6.006 algorithm lecture
+- <s> [ ] Choose this Python3? (for deeper understand algorithm) </s>
+- <s> [ ] Have new thoughts about using python as major language... </s>
+- <s> [ ] Another benefits of using python is 6.006 algorithm lecture </s>
 
 - [ ] [Data Structures and Algorithms in Python](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275/)
     - by Goodrich, Tamassia, Goldwasser
@@ -544,6 +545,7 @@ Resume the coding practice for next stage interview. It would be resumed from [b
         - [ ] L16
         - [ ] L17
     - [ ] Effective Modern C++
+
 ## Algorithmic complexity / Big-O / Asymptotic analysis
 
 - Nothing to implement
