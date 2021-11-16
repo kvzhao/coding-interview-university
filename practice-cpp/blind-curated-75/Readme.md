@@ -31,7 +31,7 @@ Array
 
 [https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
-- Search in Rotated Sorted Array -
+<s> - Search in Rotated Sorted Array - </s>
 
 [https://leetcode.com/problems/search-in-rotated-sorted-array/](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
