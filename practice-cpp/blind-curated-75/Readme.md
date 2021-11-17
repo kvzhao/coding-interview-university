@@ -312,7 +312,7 @@ Tree
 
 [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 
-- Implement Trie (Prefix Tree) -
+<s> - Implement Trie (Prefix Tree) - </s>
 
 [https://leetcode.com/problems/implement-trie-prefix-tree/](https://leetcode.com/problems/implement-trie-prefix-tree/)
 

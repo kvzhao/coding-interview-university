@@ -12,6 +12,7 @@
  */
 
  #include <iostream>
+ #include <algorithm>
  #include <vector>
  #include <deque>
 
@@ -48,10 +49,8 @@ class Solution {
 
 public:
     int maxDepth(TreeNode* root) {
-
         if (root == nullptr)
             return 0;
-
         return dfs(root);
     }
 };
