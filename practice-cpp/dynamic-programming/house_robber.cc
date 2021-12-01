@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution {
 public:
-    int rob(vector<int>& nums) {
+    int rob_dp(vector<int>& nums) {
       int n = nums.size();
       vector<int> dp(n + 1, 0);
       dp[0] = 0;
@@ -18,6 +18,17 @@ public:
       }
 
       return dp[n];
+    }
+
+    int rob(vector<int> &nums) {
+      // space optimization
+      int prev2 = 0, prev1 = 0;
+      for (auto n : nums) {
+        int temp = prev1;
+        prev1 = max(prev2 + n, prev1);
+        prev2 = temp;
+      }
+      return prev1;
     }
 };
 
