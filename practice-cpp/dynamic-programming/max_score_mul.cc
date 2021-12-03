@@ -22,6 +22,7 @@ Return the maximum score after performing m operations.
 class Solution {
 public:
     int maximumScore(vector<int>& nums, vector<int>& multipliers) {
+        int n = nums.size(), m = multipliers.size();
         
         return -1;
     }
