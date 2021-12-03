@@ -1,5 +1,6 @@
 
 #include <vector>
+#include <utility>
 #include <algorithm>
 #include <iostream>
 using namespace std;
@@ -35,38 +36,20 @@ public:
 
 int main() {
 
-  vector<int> nums;
-  int ans, ret;
-
   Solution sol;
+  vector<pair<int, vector<int>>> problems = {
+    {4, {1, 2, 3, 1}},
+    {12, {2, 7, 9, 3, 1}},
+    {4, {2, 1, 1, 2}}
+  };
 
-  nums = {1,2,3,1};
-  ans = 4;
-  ret = sol.rob(nums);
-
-  if (ans == ret) {
-    cout << "Passed\n";
-  } else {
-    cout << "Failed, " << ret << "\n";
-  }
-
-  nums = {2,7,9,3,1}, ans = 12;
-  ret = sol.rob(nums);
-
-  if (ans == ret) {
-    cout << "Passed\n";
-  } else {
-    cout << "Failed, " << ret << "\n";
-  }
-
-  nums = {2,1,1,2};
-  ans = 4;
-  ret = sol.rob(nums);
-
-  if (ans == ret) {
-    cout << "Passed\n";
-  } else {
-    cout << "Failed, " << ret << "\n";
+  for (auto &[ans, nums] : problems) {
+    auto ret = sol.rob(nums);
+    if (ans == ret) {
+      cout << "Passed\n";
+    } else {
+      cout << "Failed, " << ret << "\n";
+    }
   }
 
   return 0;
