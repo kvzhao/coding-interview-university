@@ -20,7 +20,6 @@ class Solution {
     }
 
   }
-
 public:
     int findPeakElement(vector<int>& nums) {
       return Helper(nums, 0, nums.size() - 1);
