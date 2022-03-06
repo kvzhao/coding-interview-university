@@ -7,7 +7,7 @@
 #include <unordered_map>
 #include <vector>
 
-#include "leetcode_utility.hpp"
+#include "../leetcode_utility.hpp"
 
 using namespace std;
 
