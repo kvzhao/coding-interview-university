@@ -4,6 +4,33 @@ using namespace std;
 
 class Solution {
 public:
+  vector<vector<int>> floodFillBFS(vector<vector<int>> &image, int sr, int sc,
+                                   int newColor) {
+    int oldColor = image[sr][sc];
+    if (oldColor == newColor)
+      return image;
+
+    const vector<pair<int, int>> dirs = {{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
+    deque<pair<int, int>> queue{{sr, sc}};
+
+    while (!queue.empty()) {
+
+      auto [row, col] = queue.front();
+      queue.pop_front();
+      image[row][col] = newColor;
+
+      for (const auto &[R, C] : dirs) {
+        int r = row + R;
+        int c = col + C;
+        if (r < 0 || r >= image.size() || c < 0 || c >= image[0].size() ||
+            image[r][c] != oldColor)
+          continue;
+        queue.emplace_back(make_pair(r, c));
+      }
+    }
+    return image;
+  }
+
   vector<vector<int>> floodFill(vector<vector<int>> &image, int sr, int sc,
                                 int newColor) {
     if (newColor != image[sr][sc]) {
@@ -40,7 +67,7 @@ int main() {
     getline(cin, line);
     int newColor = stoi(line);
 
-    auto ret = sol.floodFill(image, sr, sc, newColor);
+    auto ret = sol.floodFillBFS(image, sr, sc, newColor);
 
     cout << integerVector2DToString(ret) << endl;
   }
