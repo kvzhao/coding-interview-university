@@ -1,9 +1,30 @@
+#include <algorithm>
+#include <bitset>
+#include <complex>
+#include <deque>
+#include <exception>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <ios>
+#include <iosfwd>
 #include <iostream>
+#include <istream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <locale>
+#include <new>
+#include <numeric>
+#include <ostream>
 #include <queue>
+#include <set>
 #include <sstream>
 #include <stack>
+#include <stdexcept>
+#include <streambuf>
 #include <string>
-#include <unordered_map>
+#include <valarray>
 #include <vector>
 
 using namespace std;
@@ -169,6 +190,23 @@ string integerVectorToString(vector<int> list, int length = -1) {
   for (int index = 0; index < length; index++) {
     int number = list[index];
     result += to_string(number) + ", ";
+  }
+  return "[" + result.substr(0, result.length() - 2) + "]";
+}
+
+string integerVector2DToString(vector<vector<int>> lists, int length = -1) {
+  if (length == -1) {
+    length = lists.size();
+  }
+
+  if (length == 0) {
+    return "[[]]";
+  }
+
+  string result;
+  for (int index = 0; index < length; index++) {
+    vector<int> list = lists[index];
+    result += integerVectorToString(list, list.size()) + ", ";
   }
   return "[" + result.substr(0, result.length() - 2) + "]";
 }
